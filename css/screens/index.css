@@ -1,0 +1,263 @@
+.notification-bar {
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notification-bar__span {
+  display: block;
+  padding: 16px 24px;
+}
+
+.notification-bar__span .notification-bar__link:link,
+.notification-bar__span .notification-bar__link:visited {
+  color: white;
+}
+
+.notification-bar__span .notification-bar__link:hover,
+.notification-bar__span .notification-bar__link:active {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.recommend-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: white;
+  padding-top: 127px;
+}
+
+.recommend-area img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.recommend-area__text {
+  position: absolute;
+  bottom: 140px;
+  font-size: 38px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.recommend-area__button {
+  position: absolute;
+  bottom: 50px;
+  color: darkblue;
+  background-color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50px;
+  padding: 19px 35px;
+  transition: transform 0.1s ease-in-out;
+}
+
+.recommend-area__button:hover {
+  background-color: var(--botton-gray-hover);
+}
+
+.recommend-area__button:active {
+  transform: scale(0.94);
+}
+
+.idea-area {
+  padding-top: 80px;
+}
+
+.idea-area__title {
+  font-weight: bold;
+  font-size: 33px;
+}
+
+.idea-area__image-group {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.idea-area__link {
+  width: 24%;
+}
+
+.idea-area__link:link {
+  text-decoration: none;
+}
+
+.idea-area__link img {
+  display: block;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.idea-area__text-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgb(0, 190, 255);
+  color: white;
+  box-sizing: border-box;
+  padding: 20px 15px;
+  padding-bottom: 90px;
+  height: 50%;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.idea-area__text {
+  font-size: 27px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.explore-area {
+  padding-top: 80px;
+}
+
+.explore-area__title {
+  font-weight: bold;
+  font-size: 33px;
+}
+
+.explore-area__image-group {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.explore-area__link {
+  width: 49%;
+  position: relative;
+}
+
+.explore-area__link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.explore-area__text-group {
+  padding-bottom: 250px;
+}
+
+.explore-area__text-group__text {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  font-size: 38px;
+  font-weight: bold;
+  color: white;
+}
+
+.explore-area__text-group__button {
+  display: block;
+  position: absolute;
+  top: 140px;
+  left: 40px;
+  background-color: white;
+  padding: 16px 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+}
+
+.explore-area__text-group__button:hover {
+  background-color: var(--botton-gray-hover);
+}
+
+.hosting-area {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.hosting-area img {
+  width: 100vw;
+  object-fit: cover;
+  display: block;
+}
+
+.hosting-area__title {
+  color: white;
+  font-size: 65px;
+  font-weight: bold;
+  position: absolute;
+  top: 70px;
+  left: 0px;
+}
+
+.hosting-area__button {
+  position: absolute;
+  bottom: 70px;
+  left: 0px;
+  background-color: white;
+  text-decoration: none;
+  padding: 16px 25px;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.hosting-area__button:hover {
+  background-color: var(--botton-gray-hover);
+}
+
+@media screen and (max-width: 1130px) {
+  .main-screen .recommend-area img {
+    width: 100vw;
+  }
+
+  .recommend-area {
+    padding: 127px 0px 0px 0px;
+    width: 100%;
+  }
+
+  .recommend-area img {
+    border-radius: 0px;
+  }
+
+  .recommend-area__text {
+    bottom: 150px;
+    font-size: 38px;
+  }
+
+  .recommend-area__button {
+    bottom: 60px;
+  }
+
+  .hosting-area__title {
+    font-size: 49px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .recommend-area {
+    height: 650px;
+  }
+
+  .recommend-area img {
+    height: 100%;
+  }
+
+  .idea-area__link {
+    width: 30%;
+  }
+
+  .idea-area__link:last-child {
+    display: none;
+  }
+}

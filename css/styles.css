@@ -1,0 +1,17 @@
+@import "reset.css";
+@import "variables.css";
+
+@import "components/user-bar.css";
+@import "components/footer-bar.css";
+
+@import "screens/index.css";
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+@media screen and (max-width: 1130px) {
+  .main-screen {
+    padding: 0px 40px;
+  }
+}
